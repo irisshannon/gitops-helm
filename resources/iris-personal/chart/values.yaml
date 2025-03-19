@@ -8,4 +8,4 @@ gitops-runtime:
           key: token
     runtime:
       name: iris-personal
-      isConfigurationRuntime: true
+      isConfigurationRuntime: false
