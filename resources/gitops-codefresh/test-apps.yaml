@@ -3,20 +3,20 @@ kind: Application
 metadata:
   name: test-apps
   labels:
-    codefresh.io/entity: 'git-source'
+    codefresh.io/entity: git-source
     codefresh.io/internal: 'false'
   finalizers:
   - resources-finalizer.argocd.argoproj.io
 spec:
   project: cf-git-sources
   sources:
-    - repoURL: https://github.com/irisshannon/argocd-example-apps.git
-      path: irisshannon/argocd-example-apps.git
-      targetRevision: master
-      directory:
-        include: '*'
-        exclude: ''
-        recurse: true
+  - repoURL: https://github.com/irisshannon/argocd-example-apps.git
+    path: irisshannon/argocd-example-apps/apps/
+    targetRevision: master
+    directory:
+      include: '*'
+      exclude: ''
+      recurse: true
   destination:
     namespace: gitops-codefresh
     server: https://kubernetes.default.svc
