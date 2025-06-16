@@ -11,7 +11,7 @@ spec:
   project: cf-git-sources
   sources:
   - repoURL: https://github.com/irisshannon/argocd-example-apps.git
-    path: ''
+    path: guestbook
     targetRevision: master
     directory:
       include: '*'
