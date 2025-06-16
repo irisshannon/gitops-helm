@@ -15,7 +15,7 @@ spec:
   source:
     directory:
       include: >-
-        {all-runtimes-all-clusters/**/*.yaml,all-runtimes-all-clusters/*.yaml,configurations/**/*.yaml,control-planes/**/*.yaml,control-planes/*.yaml,gitops-codefresh/cf-gitops-runtime.yaml,runtimes/gitops-codefresh/**/*.yaml,runtimes/gitops-codefresh/*.yaml}
+        {all-runtimes-all-clusters/**/*.yaml,all-runtimes-all-clusters/*.yaml,configurations/**/*.yaml,control-planes/**/*.yaml,control-planes/*.yaml,gitops-codefresh/cf-gitops-runtime.yaml,gitops-codefresh/test-apps.yaml,runtimes/gitops-codefresh/**/*.yaml,runtimes/gitops-codefresh/*.yaml}
       recurse: true
     path: resources
     repoURL: https://github.com/irisshannon/gitops-helm.git
