@@ -11,7 +11,7 @@ spec:
   project: cf-git-sources
   sources:
   - repoURL: https://github.com/irisshannon/argocd-example-apps.git
-    path: argocd-example-apps/
+    path: argocd-example-apps
     targetRevision: master
     directory:
       include: '*'
